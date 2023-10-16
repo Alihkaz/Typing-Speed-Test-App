@@ -78,7 +78,7 @@ def count_down(count,given_word_list):
               if word in given_word_list:
                   score_count+=1
           canvas.itemconfig(score_text,text=f"Score(Words/minute):{score_count}")
-          print(given_word_list)
+         
               
           
         
@@ -111,7 +111,7 @@ def start_timer():
   random_num=random.randint(0,400)    
   statement_label.insert(END,f" {list.given_word_list[random_num]} ")    
        
-  Time = 15
+  Time = 60
   count_down(Time,list.given_word_list)
 
 
